@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "rootDir": "src",
+    "outDir": "dist",
+    "strict": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true
+  },
+  "scripts": {
+  "dev":   "nodemon --exec ts-node src/server.ts",
+  "build": "tsc",
+  "start": "node dist/server.js"
+},
+  "include": ["src/**/*"]
+}
