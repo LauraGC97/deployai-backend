@@ -10,7 +10,7 @@ const PORT = process.env.PORT ?? 3000;
 app.use(cors({
   origin: [
     'http://localhost:4200',
-    'https://proyecto.vercel.app'
+    'https://deployai-frontend.vercel.app'
   ]
 
 }));

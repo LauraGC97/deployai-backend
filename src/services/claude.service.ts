@@ -11,7 +11,7 @@ interface Message {
 
 export async function sendToClaudeService(messages: Message[]): Promise<string> {
   const response = await groq.chat.completions.create({
-    model:      'llama-3.3-70b-versatile', // modelo gratuito más potente de Groq
+    model:      'llama-3.3-70b-versatile',
     max_tokens: 1024,
     messages
   });
